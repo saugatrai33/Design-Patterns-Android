@@ -8,7 +8,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Accessing singleton class
-        Singleton.doSomething()
+        val dialog = DialogFactory.createDialog(DialogType.DIALOG_CREATE_CHAT)
+        println(dialog)
     }
 }
