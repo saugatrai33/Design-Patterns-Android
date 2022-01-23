@@ -8,7 +8,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val dialog = DialogFactory.createDialog(DialogType.DIALOG_CREATE_CHAT)
-        println(dialog)
+        val iPhone15 = Mobile.Builder()
+            .ram(12)
+            .soc("Apple M1 Pro Max")
+            .build()
+
+        println(iPhone15.ram)
     }
 }
